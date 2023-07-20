@@ -3,14 +3,13 @@ package org.example.tests;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
+import org.example.properties.JobBoardProperties;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
 class CreatePostingTest {
-
-    private static final String BASE_URL = "http://localhost:8080/postings";
 
     @Test
     void createPostingTest() {
@@ -30,7 +29,7 @@ class CreatePostingTest {
                 .contentType(ContentType.JSON)
                 .body(jobPosting.toString())
                 .when()
-                .post(BASE_URL)
+                .post(JobBoardProperties.getBaseUrl())
                 .then()
                 .log().ifError()
                 .extract()
