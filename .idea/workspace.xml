@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Extracted request to dedicated class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/url/JobBoardUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/BaseRequest.java" afterDir="false" />
+    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/DeletePostingRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/properties/JobBoardProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/properties/JobBoardProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/requests/CreatePostingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/CreatePostingRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreatePostingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/CreatePostingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690970433278</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints">
+      <created>1690972041662</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690972041662</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +136,7 @@
     <MESSAGE value="Inital commit" />
     <MESSAGE value="Moved baseurl to jobboard.properties" />
     <MESSAGE value="Extracted request to dedicated class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracted request to dedicated class" />
+    <MESSAGE value="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints" />
   </component>
 </project>

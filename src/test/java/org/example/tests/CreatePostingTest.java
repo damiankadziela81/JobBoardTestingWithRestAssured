@@ -3,6 +3,7 @@ package org.example.tests;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.example.requests.CreatePostingRequest;
+import org.example.requests.DeletePostingRequest;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
@@ -26,6 +27,11 @@ class CreatePostingTest {
 
         Assertions.assertThat(response.statusCode()).isEqualTo(201);
         Assertions.assertThat(response.jsonPath().getString("company.name")).isEqualTo("Valve");
+
+        final var postingId = response.jsonPath().getString("id");
+        final Response deleteResponse = DeletePostingRequest.deletePosting(postingId);
+        Assertions.assertThat(deleteResponse.statusCode()).isEqualTo(204);
+        Assertions.assertThat(deleteResponse.asString()).isEmpty();
 
     }
 }
