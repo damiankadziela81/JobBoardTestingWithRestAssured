@@ -1,13 +1,10 @@
 package org.example.tests;
 
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
-import org.example.properties.JobBoardProperties;
+import org.example.requests.CreatePostingRequest;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
-
-import static io.restassured.RestAssured.given;
 
 class CreatePostingTest {
 
@@ -25,15 +22,7 @@ class CreatePostingTest {
         jobPosting.put("expiresAt", "2024-08-01");
         jobPosting.put("company", company);
 
-        final Response response = given()
-                .contentType(ContentType.JSON)
-                .body(jobPosting.toString())
-                .when()
-                .post(JobBoardProperties.getBaseUrl())
-                .then()
-                .log().ifError()
-                .extract()
-                .response();
+        final Response response = CreatePostingRequest.createPosting(jobPosting);
 
         Assertions.assertThat(response.statusCode()).isEqualTo(201);
         Assertions.assertThat(response.jsonPath().getString("company.name")).isEqualTo("Valve");
