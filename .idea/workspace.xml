@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/DeletePostingRequest.java" afterDir="false" />
+    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Added delete request">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/CreatePostingWithParamsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreatePostingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/CreatePostingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CreatePostingTest.createPostingTest">
+  <component name="RunManager" selected="JUnit.CreatePostingWithParamsTest">
     <configuration name="CreatePostingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JobBoardTestingWithRestAssured" />
       <extension name="coverage">
@@ -74,8 +73,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreatePostingWithParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JobBoardTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.CreatePostingWithParamsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatePostingWithParamsTest.createPostingWithParamsTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JobBoardTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.CreatePostingWithParamsTest" />
+      <option name="METHOD_NAME" value="createPostingWithParamsTest(java.lang.String,java.math.BigDecimal)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatePostingWithParamsTest.createPostingWithParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JobBoardTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.CreatePostingWithParamsTest" />
+      <option name="METHOD_NAME" value="createPostingWithParamsTest(java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreatePostingWithParamsTest" />
+        <item itemvalue="JUnit.CreatePostingWithParamsTest.createPostingWithParamsTest (1)" />
+        <item itemvalue="JUnit.CreatePostingWithParamsTest.createPostingWithParamsTest" />
         <item itemvalue="JUnit.CreatePostingTest.createPostingTest" />
         <item itemvalue="JUnit.CreatePostingTest" />
       </list>
@@ -118,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690972041662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added delete request">
+      <created>1690974822493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690974822493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +193,7 @@
     <MESSAGE value="Moved baseurl to jobboard.properties" />
     <MESSAGE value="Extracted request to dedicated class" />
     <MESSAGE value="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints" />
+    <MESSAGE value="Added delete request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete request" />
   </component>
 </project>
