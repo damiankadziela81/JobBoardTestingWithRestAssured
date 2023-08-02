@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Added parametrized test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/ReadAllPostingsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/ReadSinglePostingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/UpdatePostingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/ReadPostingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/ReadPostingsTest.java" afterDir="false" />
+    <list default="true" id="551429df-2a01-441e-9858-cdf8cc06e444" name="Changes" comment="Added more CRUD requests and tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/ReadPostingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/ReadPostingsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690976489223</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added more CRUD requests and tests">
+      <created>1690980435076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690980435076</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +209,7 @@
     <MESSAGE value="Added BaseRequest with specBuilder and JobBoardUrl class to handle endpoints" />
     <MESSAGE value="Added delete request" />
     <MESSAGE value="Added parametrized test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parametrized test" />
+    <MESSAGE value="Added more CRUD requests and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more CRUD requests and tests" />
   </component>
 </project>

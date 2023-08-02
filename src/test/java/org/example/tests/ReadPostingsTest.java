@@ -14,24 +14,30 @@ class ReadPostingsTest {
     @Test
     void readPostingTest() {
 
+        final String description1 = "job from Java 1";
+        final String description2 = "job from Java 2";
+        final String companyName1 = "Valve 1";
+        final String companyName2 = "Valve 2";
+
+
         JSONObject company1 = new JSONObject();
-        company1.put("name", "Valve1");
+        company1.put("name", companyName1);
         company1.put("contact", "gaben@valve.com");
         company1.put("website", "https://valve.com");
 
         JSONObject jobPosting1 = new JSONObject();
-        jobPosting1.put("description", "job from Java 1");
+        jobPosting1.put("description", description1);
         jobPosting1.put("salary", 8000);
         jobPosting1.put("expiresAt", "2024-08-01");
         jobPosting1.put("company", company1);
 
         JSONObject company2 = new JSONObject();
-        company2.put("name", "Valve2");
+        company2.put("name", companyName2);
         company2.put("contact", "gaben2@valve.com");
         company2.put("website", "https://valve2.com");
 
         JSONObject jobPosting2 = new JSONObject();
-        jobPosting2.put("description", "job from Java 2");
+        jobPosting2.put("description", description2);
         jobPosting2.put("salary", 9000);
         jobPosting2.put("expiresAt", "2024-08-02");
         jobPosting2.put("company", company2);
@@ -49,10 +55,12 @@ class ReadPostingsTest {
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
             if (jsonObject.optString("id").equals(postingId1)) {
-                Assertions.assertThat(jsonObject.optString("description")).isEqualTo("job from Java 1");
+                Assertions.assertThat(jsonObject.getString("description")).isEqualTo(description1);
+                Assertions.assertThat(jsonObject.getJSONObject("company").getString("name")).isEqualTo(companyName1);
             }
             if (jsonObject.optString("id").equals(postingId2)) {
-                Assertions.assertThat(jsonObject.optString("description")).isEqualTo("job from Java 2");
+                Assertions.assertThat(jsonObject.getString("description")).isEqualTo(description2);
+                Assertions.assertThat(jsonObject.getJSONObject("company").getString("name")).isEqualTo(companyName2);
             }
         }
 
